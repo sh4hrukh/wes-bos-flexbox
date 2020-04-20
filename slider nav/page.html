@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Flex Box Slider NavBar</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            let images=['book.jpg','things.jpg','mocking.jpg','gatsby.jpeg','lolita.jpg'];
+            let curr=0;
+            function left()
+            {
+                
+                $("ul li:nth-child("+(curr+2)+")").css("background","transparent");
+                curr=(--curr)>=0?curr:images.length-1;
+                document.getElementById('image').src=images[curr];
+                $("ul li:nth-child("+(curr+2)+")").css("background","red");
+            }
+            function right()
+            {
+                $("ul li:nth-child("+(curr+2)+")").css("background","transparent");
+                curr=(++curr)<images.length?curr:0;
+                console.log(curr);
+                document.getElementById('image').src=images[curr];
+                $("ul li:nth-child("+(curr+2)+")").css("background","red");
+            }
+        </script>
+    </head>
+    <body>
+        <img id="image" src="book.jpg" alt="Image of the selected book"/>
+        <ul class="slider-nav">
+            <li class="arrow" onclick="left()">
+                <a href="#"><span >&#8592;</span></a>
+            </li>
+            <li >
+                <a href="#"><span>Pride and Prejudice</span></a>
+            </li>
+            <li >
+                <a href="#"><span>The God of Small Things</span></a>
+            </li>
+            <li >
+                <a href="#"><span>To Kill a Mocking Bird</span></a>
+            </li>
+            <li >
+                <a href="#"><span>The Great Gatsby</span></a>
+            </li>
+            <li >
+                <a href="#"><span>Lolita</span></a>
+            </li>
+            <li class="arrow" onclick="right()">
+                <a href="#"><span>&#8594;</span></a>
+            </li>
+        </ul>
+    </body>
+</html>

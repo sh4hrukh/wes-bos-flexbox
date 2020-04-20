@@ -1,0 +1,53 @@
+body{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    color: brown;
+}
+
+
+
+.wrapper input[type="submit"]
+{
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: white;
+    font-weight: bold;
+    height: 80%;
+    margin: auto;
+}
+
+form{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 10%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item{
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+label{
+    padding: 2%;
+    text-transform: uppercase;
+    font-size: small;
+    margin: 1%;
+}
+
+input{
+    width: 98%;
+}
+

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Flex Box NavBar</title>
+        <link href="flexnavcss.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/3ce6f5a0d6.js" crossorigin="anonymous"></script>
+        <script>
+            function toggleMenu(){
+                document.getElementById("navbar").classList.toggle("display");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+
+        <section>
+            <h1>FlexBox</h1>
+        </section>
+        <header>
+            <nav>
+                <section class="menu" onclick="toggleMenu()">
+                    <span style="font-size:2em">&#9776; </span>Menu
+                </section>
+                <ul id="navbar">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                    <li class="social"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img class="main-image" src="webdev.jpg" alt="image showing a developer's desk "/>
+        </section>
+        <section>
+            <form>
+                <input type="email" placeholder="Your Email"/>
+                <input type="password" placeholder="Your password"/>
+                <input type="submit" value="Sign Up"/>
+            </form>
+        </section>
+        <section>
+            <p>By Shahrukh Shaikh</p>
+        </section>
+    </div>
+    </body>
+</html>
